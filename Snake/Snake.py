@@ -16,6 +16,7 @@ APPLE_RAW = pygame.image.load("img/apple.png")
 APPLE = pygame.transform.scale(APPLE_RAW, (CELL_SIZE, CELL_SIZE))
 SOUND_EFFECT = pygame.mixer.Sound('music/fruit.wav')
 SOUND_EFFECT_BONUS = pygame.mixer.Sound('music/fruit_bonus.wav')
+SOUND_BACKGROUND = pygame.mixer.Sound('music/background_music.mp3')
 SCREEN_UPDATE = pygame.USEREVENT
 
 
@@ -119,7 +120,7 @@ class Game:
             self.fruit.random_placement()
             self.snake.fruit_consumed()
             self.score += 1
-            pygame.mixer.Sound.play(SOUND_EFFECT if self.score%10 != 0 else SOUND_EFFECT_BONUS) 
+            pygame.mixer.find_channel(True).play(SOUND_EFFECT if self.score%10 != 0 else SOUND_EFFECT_BONUS) 
             pygame.mixer.music.stop()
     
     def failure_checker(self):   
@@ -132,6 +133,8 @@ class Game:
         print("game over")
 
 game = Game()
+pygame.mixer.find_channel(True).play(SOUND_BACKGROUND, loops = -1) 
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -148,7 +151,7 @@ while True:
                 game.snake.direction = Vector2(-1, 0)
             if event.key == pygame.K_RIGHT and game.snake.direction != Vector2(-1, 0):
                 game.snake.direction = Vector2(1, 0)
-    
+ 
     game.draw_all()
     pygame.display.flip()
     
