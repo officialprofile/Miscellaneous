@@ -6,8 +6,8 @@ from pygame.math import Vector2
 pygame.init()
 pygame.font.init()
 
-CELL_SIZE = 20
-NUM_CELLS = 30
+CELL_SIZE = 30
+NUM_CELLS = 25
 FPS = 60
 FREQ = 100
 #BACKGROUND_RAW = pygame.image.load("media/bg.jpg")
@@ -26,16 +26,16 @@ pygame.display.set_caption('Snake')
 clock = pygame.time.Clock()
 font = pygame.font.Font('font/GRASSEVENT.ttf', 10*CELL_SIZE)
 
-BORDER_UL = pygame.image.load("img/border_ul.png")
-BORDER_UR = pygame.image.load("img/border_ur.png")
-BORDER_BL = pygame.image.load("img/border_bl.png")
-BORDER_BR = pygame.image.load("img/border_br.png")
-BORDER_U = pygame.image.load("img/border_u.png")
-BORDER_L = pygame.image.load("img/border_l.png")
-BORDER_R = pygame.image.load("img/border_r.png")
-BORDER_B = pygame.image.load("img/border_b.png")
-GRASS_1 = pygame.image.load("img/grass_1.png")
-GRASS_2 = pygame.image.load("img/grass_2.png")
+BORDER_UL = pygame.transform.scale(pygame.image.load("img/border_ul.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_UR = pygame.transform.scale(pygame.image.load("img/border_ur.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_BL = pygame.transform.scale(pygame.image.load("img/border_bl.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_BR = pygame.transform.scale(pygame.image.load("img/border_br.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_U = pygame.transform.scale(pygame.image.load("img/border_u.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_L = pygame.transform.scale(pygame.image.load("img/border_l.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_R = pygame.transform.scale(pygame.image.load("img/border_r.png"), (CELL_SIZE, CELL_SIZE))
+BORDER_B = pygame.transform.scale(pygame.image.load("img/border_b.png"), (CELL_SIZE, CELL_SIZE))
+GRASS_1 = pygame.transform.scale(pygame.image.load("img/grass_1.png"), (CELL_SIZE, CELL_SIZE))
+GRASS_2 = pygame.transform.scale(pygame.image.load("img/grass_2.png"), (CELL_SIZE, CELL_SIZE))
 
 class Fruit:
     def __init__(self):
