@@ -6,8 +6,8 @@ from pygame.math import Vector2
 pygame.init()
 pygame.font.init()
 
-CELL_SIZE = 30
-NUM_CELLS = 25
+CELL_SIZE = 40
+NUM_CELLS = 20
 FPS = 60
 FREQ = 100
 #BACKGROUND_RAW = pygame.image.load("media/bg.jpg")
@@ -53,19 +53,87 @@ class Fruit:
 
 class Snake:
     def __init__(self):
+        self.orientation_dict = {(1, 0):'L', (-1, 0): 'R', (0, 1): 'B', (0, -1): 'U'}
         self.body = [Vector2(4, 10), Vector2(3, 10), Vector2(2, 10)]
         self.direction = Vector2(1, 0)
+        self.segments_orientation = ['R', 'R', 'R']
         self.add_segment = False
 
+        self.head_up = pygame.transform.scale(pygame.image.load('img/face_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.head_down = pygame.transform.scale(pygame.image.load('img/face_down.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.head_left = pygame.transform.scale(pygame.image.load('img/face_left.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.head_right = pygame.transform.scale(pygame.image.load('img/face_right.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+        self.tail_up = pygame.transform.scale(pygame.image.load('img/tail_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.tail_bottom = pygame.transform.scale(pygame.image.load('img/tail_down.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.tail_left = pygame.transform.scale(pygame.image.load('img/tail_left.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.tail_right = pygame.transform.scale(pygame.image.load('img/tail_right.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+        self.body_ver = pygame.transform.scale(pygame.image.load('img/vertical.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.body_hor = pygame.transform.scale(pygame.image.load('img/horizontal.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+        self.body_bl = pygame.transform.scale(pygame.image.load('img/corner_bl.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.body_br = pygame.transform.scale(pygame.image.load('img/corner_br.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.body_ul = pygame.transform.scale(pygame.image.load('img/corner_ul.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+        self.body_ur = pygame.transform.scale(pygame.image.load('img/corner_ur.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+
     def draw(self):
-        for segment in self.body:
+        for i, segment in enumerate(self.body):
             rect = pygame.Rect(segment.x * CELL_SIZE, segment.y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
-            pygame.draw.rect(screen, pygame.Color('white'), rect)
+            
+            if i == 0:
+                if self.segments_orientation[i] == 'U':
+                    screen.blit(self.head_up, rect)
+                elif self.segments_orientation[i] == 'B':
+                    screen.blit(self.head_down, rect)
+                elif self.segments_orientation[i] == 'R':
+                    screen.blit(self.head_right, rect)
+                elif self.segments_orientation[i] == 'L':
+                    screen.blit(self.head_left, rect)
+            elif 0 < i < len(self.body) - 1:
+                if self.segments_orientation[i-1] == self.segments_orientation[i]:
+                    if self.segments_orientation[i-1] == 'U' or self.segments_orientation[i-1] == 'B':
+                        screen.blit(self.body_ver, rect)
+                    else:
+                        screen.blit(self.body_hor, rect)
+                else:
+                    if self.segments_orientation[i-1] == 'U' and self.segments_orientation[i] == 'L':
+                        screen.blit(self.body_ul, rect)
+                    elif self.segments_orientation[i-1] == 'U' and self.segments_orientation[i] == 'R':
+                        screen.blit(self.body_ur, rect)
+                    elif self.segments_orientation[i-1] == 'B' and self.segments_orientation[i] == 'L':
+                        screen.blit(self.body_bl, rect)
+                    elif self.segments_orientation[i-1] == 'B' and self.segments_orientation[i] == 'R':
+                        screen.blit(self.body_br, rect)
+                    elif self.segments_orientation[i-1] == 'R' and self.segments_orientation[i] == 'U':
+                        screen.blit(self.body_bl, rect)
+                    elif self.segments_orientation[i-1] == 'R' and self.segments_orientation[i] == 'B':
+                        screen.blit(self.body_ul, rect)
+                    elif self.segments_orientation[i-1] == 'L' and self.segments_orientation[i] == 'U':
+                        screen.blit(self.body_br, rect)
+                    elif self.segments_orientation[i-1] == 'L' and self.segments_orientation[i] == 'B':
+                        screen.blit(self.body_ur, rect)
+        
+            elif i == len(self.body) - 1:
+                if self.segments_orientation[i-1] == 'R':
+                    screen.blit(self.tail_right, rect)
+                elif self.segments_orientation[i-1] == 'L':
+                    screen.blit(self.tail_left, rect)
+                elif self.segments_orientation[i-1] == 'U':
+                    screen.blit(self.tail_up, rect)
+                elif self.segments_orientation[i-1] == 'B':
+                    screen.blit(self.tail_bottom, rect)
+            else:
+                pygame.draw.rect(screen, (200, 200, 200), rect)    
 
     def move(self):
         new_body = self.body[:] if self.add_segment else self.body[:-1]
         new_body.insert(0, new_body[0] + self.direction)
         self.body = new_body[:]
+
+        new_segments_orientation = self.segments_orientation[:] if self.add_segment else self.segments_orientation[:-1]
+        self.segments_orientation = [self.orientation_dict[(self.direction[0], self.direction[1])]] + new_segments_orientation        
         self.add_segment = False
 
     def fruit_consumed(self):
@@ -124,13 +192,16 @@ class Game:
             pygame.mixer.music.stop()
     
     def failure_checker(self):   
-        if not 0 <= self.snake.body[0].x < NUM_CELLS or not 0 <= self.snake.body[0].y < NUM_CELLS:
+        if not 1 <= self.snake.body[0].x < NUM_CELLS - 1 or not 1 <= self.snake.body[0].y < NUM_CELLS - 1:
             self.game_over()
         if self.snake.body[0] in self.snake.body[1:]:
             self.game_over()
 
     def game_over(self):
-        print("game over")
+        self.snake.body = [Vector2(4, 10), Vector2(3, 10), Vector2(2, 10)]
+        self.snake.direction = Vector2(1, 0)
+        self.snake.segments_orientation = ['R', 'R', 'R']
+        self.score = 0
 
 game = Game()
 pygame.mixer.find_channel(True).play(SOUND_BACKGROUND, loops = -1) 
