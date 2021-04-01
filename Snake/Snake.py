@@ -3,39 +3,59 @@ import sys
 import random
 from pygame.math import Vector2
 
-pygame.init()
-pygame.font.init()
 
 CELL_SIZE = 30
 NUM_CELLS = 25
 FPS = 60
 FREQ = 60
-#BACKGROUND_RAW = pygame.image.load("media/bg.jpg")
-#BACKGROUND = pygame.transform.scale(BACKGROUND_RAW, (CELL_SIZE * NUM_CELLS, CELL_SIZE * NUM_CELLS))
-APPLE_RAW = pygame.image.load("img/apple.png")
-APPLE = pygame.transform.scale(APPLE_RAW, (CELL_SIZE, CELL_SIZE))
+SCREEN_UPDATE = pygame.USEREVENT
+
+pygame.init()
+pygame.font.init()
+pygame.time.set_timer(SCREEN_UPDATE, FREQ)
+pygame.display.set_caption('Snake')
+screen = pygame.display.set_mode((CELL_SIZE*NUM_CELLS, CELL_SIZE*NUM_CELLS))
+clock = pygame.time.Clock()
+
+FONT = pygame.font.Font('font/GRASSEVENT.ttf', 10*CELL_SIZE)
+
 SOUND_EFFECT = pygame.mixer.Sound('music/fruit.wav')
 SOUND_EFFECT_BONUS = pygame.mixer.Sound('music/fruit_bonus.wav')
 SOUND_BACKGROUND = pygame.mixer.Sound('music/background_music.mp3')
-SCREEN_UPDATE = pygame.USEREVENT
 
-
-pygame.time.set_timer(SCREEN_UPDATE, FREQ)
-screen = pygame.display.set_mode((CELL_SIZE*NUM_CELLS, CELL_SIZE*NUM_CELLS))
-pygame.display.set_caption('Snake')
-clock = pygame.time.Clock()
-font = pygame.font.Font('font/GRASSEVENT.ttf', 10*CELL_SIZE)
+APPLE = pygame.transform.scale(pygame.image.load("img/apple.png"), (CELL_SIZE, CELL_SIZE))
 
 BORDER_UL = pygame.transform.scale(pygame.image.load("img/border_ul.png"), (CELL_SIZE, CELL_SIZE))
 BORDER_UR = pygame.transform.scale(pygame.image.load("img/border_ur.png"), (CELL_SIZE, CELL_SIZE))
 BORDER_BL = pygame.transform.scale(pygame.image.load("img/border_bl.png"), (CELL_SIZE, CELL_SIZE))
 BORDER_BR = pygame.transform.scale(pygame.image.load("img/border_br.png"), (CELL_SIZE, CELL_SIZE))
+
 BORDER_U = pygame.transform.scale(pygame.image.load("img/border_u.png"), (CELL_SIZE, CELL_SIZE))
 BORDER_L = pygame.transform.scale(pygame.image.load("img/border_l.png"), (CELL_SIZE, CELL_SIZE))
 BORDER_R = pygame.transform.scale(pygame.image.load("img/border_r.png"), (CELL_SIZE, CELL_SIZE))
 BORDER_B = pygame.transform.scale(pygame.image.load("img/border_b.png"), (CELL_SIZE, CELL_SIZE))
+
 GRASS_1 = pygame.transform.scale(pygame.image.load("img/grass_1.png"), (CELL_SIZE, CELL_SIZE))
 GRASS_2 = pygame.transform.scale(pygame.image.load("img/grass_2.png"), (CELL_SIZE, CELL_SIZE))
+
+HEAD_UP = pygame.transform.scale(pygame.image.load('img/face_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+HEAD_DOWN = pygame.transform.scale(pygame.image.load('img/face_down.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+HEAD_LEFT = pygame.transform.scale(pygame.image.load('img/face_left.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+HEAD_RIGHT = pygame.transform.scale(pygame.image.load('img/face_right.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+TAIL_UP = pygame.transform.scale(pygame.image.load('img/tail_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+TAIL_BOTTOM = pygame.transform.scale(pygame.image.load('img/tail_down.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+TAIL_LEFT = pygame.transform.scale(pygame.image.load('img/tail_left.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+TAIL_RIGHT = pygame.transform.scale(pygame.image.load('img/tail_right.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+BODY_VER = pygame.transform.scale(pygame.image.load('img/vertical.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+BODY_HOR = pygame.transform.scale(pygame.image.load('img/horizontal.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
+BODY_BL = pygame.transform.scale(pygame.image.load('img/corner_bl.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+BODY_BR = pygame.transform.scale(pygame.image.load('img/corner_br.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+BODY_UL = pygame.transform.scale(pygame.image.load('img/corner_ul.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+BODY_UR = pygame.transform.scale(pygame.image.load('img/corner_ur.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
+
 
 class Fruit:
     def __init__(self):
@@ -59,71 +79,52 @@ class Snake:
         self.segments_orientation = ['L', 'L', 'L']
         self.add_segment = False
 
-        self.head_up = pygame.transform.scale(pygame.image.load('img/face_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.head_down = pygame.transform.scale(pygame.image.load('img/face_down.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.head_left = pygame.transform.scale(pygame.image.load('img/face_left.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.head_right = pygame.transform.scale(pygame.image.load('img/face_right.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-
-        self.tail_up = pygame.transform.scale(pygame.image.load('img/tail_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.tail_bottom = pygame.transform.scale(pygame.image.load('img/tail_down.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.tail_left = pygame.transform.scale(pygame.image.load('img/tail_left.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.tail_right = pygame.transform.scale(pygame.image.load('img/tail_right.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-
-        self.body_ver = pygame.transform.scale(pygame.image.load('img/vertical.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.body_hor = pygame.transform.scale(pygame.image.load('img/horizontal.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-
-        self.body_bl = pygame.transform.scale(pygame.image.load('img/corner_bl.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.body_br = pygame.transform.scale(pygame.image.load('img/corner_br.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.body_ul = pygame.transform.scale(pygame.image.load('img/corner_ul.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-        self.body_ur = pygame.transform.scale(pygame.image.load('img/corner_ur.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
-
-
     def draw(self):
-        for i, segment in enumerate(self.body):
-            rect = pygame.Rect(segment.x * CELL_SIZE, segment.y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+        for i in range(len(self.body)):
+            rect = pygame.Rect(self.body[i].x * CELL_SIZE, self.body[i].y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
             
             if i == 0:
                 if self.segments_orientation[i] == 'U':
-                    screen.blit(self.head_up, rect)
+                    screen.blit(HEAD_UP, rect)
                 elif self.segments_orientation[i] == 'B':
-                    screen.blit(self.head_down, rect)
+                    screen.blit(HEAD_DOWN, rect)
                 elif self.segments_orientation[i] == 'R':
-                    screen.blit(self.head_right, rect)
+                    screen.blit(HEAD_RIGHT, rect)
                 elif self.segments_orientation[i] == 'L':
-                    screen.blit(self.head_left, rect)
+                    screen.blit(HEAD_LEFT, rect)
             elif 0 < i < len(self.body) - 1:
                 if self.segments_orientation[i-1] == self.segments_orientation[i]:
                     if self.segments_orientation[i-1] == 'U' or self.segments_orientation[i-1] == 'B':
-                        screen.blit(self.body_ver, rect)
+                        screen.blit(BODY_VER, rect)
                     else:
-                        screen.blit(self.body_hor, rect)
+                        screen.blit(BODY_HOR, rect)
                 else:
                     if self.segments_orientation[i-1] == 'U' and self.segments_orientation[i] == 'L':
-                        screen.blit(self.body_ul, rect)
+                        screen.blit(BODY_UL, rect)
                     elif self.segments_orientation[i-1] == 'U' and self.segments_orientation[i] == 'R':
-                        screen.blit(self.body_ur, rect)
+                        screen.blit(BODY_UR, rect)
                     elif self.segments_orientation[i-1] == 'B' and self.segments_orientation[i] == 'L':
-                        screen.blit(self.body_bl, rect)
+                        screen.blit(BODY_BL, rect)
                     elif self.segments_orientation[i-1] == 'B' and self.segments_orientation[i] == 'R':
-                        screen.blit(self.body_br, rect)
+                        screen.blit(BODY_BR, rect)
                     elif self.segments_orientation[i-1] == 'R' and self.segments_orientation[i] == 'U':
-                        screen.blit(self.body_bl, rect)
+                        screen.blit(BODY_BL, rect)
                     elif self.segments_orientation[i-1] == 'R' and self.segments_orientation[i] == 'B':
-                        screen.blit(self.body_ul, rect)
+                        screen.blit(BODY_UL, rect)
                     elif self.segments_orientation[i-1] == 'L' and self.segments_orientation[i] == 'U':
-                        screen.blit(self.body_br, rect)
+                        screen.blit(BODY_BR, rect)
                     elif self.segments_orientation[i-1] == 'L' and self.segments_orientation[i] == 'B':
-                        screen.blit(self.body_ur, rect)
+                        screen.blit(BODY_UR, rect)
         
             elif i == len(self.body) - 1:
                 if self.segments_orientation[i-1] == 'R':
-                    screen.blit(self.tail_left, rect)
+                    screen.blit(TAIL_LEFT, rect)
                 elif self.segments_orientation[i-1] == 'L':
-                    screen.blit(self.tail_right, rect)
+                    screen.blit(TAIL_RIGHT, rect)
                 elif self.segments_orientation[i-1] == 'U':
-                    screen.blit(self.tail_up, rect)
+                    screen.blit(TAIL_UP, rect)
                 elif self.segments_orientation[i-1] == 'B':
-                    screen.blit(self.tail_bottom, rect)
+                    screen.blit(TAIL_BOTTOM, rect)
             else:
                 pygame.draw.rect(screen, (200, 200, 200), rect)    
 
@@ -176,7 +177,7 @@ class Game:
     
     def draw_all(self):
         self.draw_background()
-        print_score = font.render(str(self.score), False, (60, 180, 60))
+        print_score = FONT.render(str(self.score), False, (60, 180, 60))
         score_rect = print_score.get_rect(center = (NUM_CELLS*CELL_SIZE/2, NUM_CELLS*CELL_SIZE/2))
         screen.blit(print_score, score_rect)
 
