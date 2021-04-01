@@ -6,10 +6,10 @@ from pygame.math import Vector2
 pygame.init()
 pygame.font.init()
 
-CELL_SIZE = 40
-NUM_CELLS = 20
+CELL_SIZE = 30
+NUM_CELLS = 25
 FPS = 60
-FREQ = 100
+FREQ = 60
 #BACKGROUND_RAW = pygame.image.load("media/bg.jpg")
 #BACKGROUND = pygame.transform.scale(BACKGROUND_RAW, (CELL_SIZE * NUM_CELLS, CELL_SIZE * NUM_CELLS))
 APPLE_RAW = pygame.image.load("img/apple.png")
@@ -56,7 +56,7 @@ class Snake:
         self.orientation_dict = {(1, 0):'L', (-1, 0): 'R', (0, 1): 'B', (0, -1): 'U'}
         self.body = [Vector2(4, 10), Vector2(3, 10), Vector2(2, 10)]
         self.direction = Vector2(1, 0)
-        self.segments_orientation = ['R', 'R', 'R']
+        self.segments_orientation = ['L', 'L', 'L']
         self.add_segment = False
 
         self.head_up = pygame.transform.scale(pygame.image.load('img/face_up.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
@@ -117,9 +117,9 @@ class Snake:
         
             elif i == len(self.body) - 1:
                 if self.segments_orientation[i-1] == 'R':
-                    screen.blit(self.tail_right, rect)
-                elif self.segments_orientation[i-1] == 'L':
                     screen.blit(self.tail_left, rect)
+                elif self.segments_orientation[i-1] == 'L':
+                    screen.blit(self.tail_right, rect)
                 elif self.segments_orientation[i-1] == 'U':
                     screen.blit(self.tail_up, rect)
                 elif self.segments_orientation[i-1] == 'B':
@@ -200,7 +200,7 @@ class Game:
     def game_over(self):
         self.snake.body = [Vector2(4, 10), Vector2(3, 10), Vector2(2, 10)]
         self.snake.direction = Vector2(1, 0)
-        self.snake.segments_orientation = ['R', 'R', 'R']
+        self.snake.segments_orientation = ['L', 'L', 'L']
         self.score = 0
 
 game = Game()
