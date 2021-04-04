@@ -5,9 +5,9 @@ from pygame.math import Vector2
 
 
 CELL_SIZE = 30
-NUM_CELLS = 25
+NUM_CELLS = 20
 FPS = 60
-FREQ = 60
+FREQ = 100
 SCREEN_UPDATE = pygame.USEREVENT
 
 pygame.init()
@@ -56,20 +56,6 @@ BODY_BR = pygame.transform.scale(pygame.image.load('img/corner_br.png').convert_
 BODY_UL = pygame.transform.scale(pygame.image.load('img/corner_ul.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
 BODY_UR = pygame.transform.scale(pygame.image.load('img/corner_ur.png').convert_alpha(), (CELL_SIZE, CELL_SIZE))
 
-
-class Fruit:
-    def __init__(self):
-        self.random_placement()
-
-    def place_fruit(self):
-        apple_rect = pygame.Rect(self.position.x * CELL_SIZE, self.position.y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
-        screen.blit(APPLE, apple_rect)
-        #pygame.draw.rect(screen, pygame.Color('white') , apple_rect)
-
-    def random_placement(self):
-        self.x = random.randint(1, NUM_CELLS - 2)
-        self.y = random.randint(1, NUM_CELLS - 2)
-        self.position = Vector2(self.x, self.y)
 
 class Snake:
     def __init__(self):
@@ -140,6 +126,20 @@ class Snake:
     def fruit_consumed(self):
         self.add_segment = True
 
+class Fruit:
+    def __init__(self):
+        self.random_placement()
+
+    def place_fruit(self):
+        apple_rect = pygame.Rect(self.position.x * CELL_SIZE, self.position.y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+        screen.blit(APPLE, apple_rect)
+        #pygame.draw.rect(screen, pygame.Color('white') , apple_rect)
+
+    def random_placement(self):
+        self.x = random.randint(1, NUM_CELLS - 2)
+        self.y = random.randint(1, NUM_CELLS - 2)
+        self.position = Vector2(self.x, self.y)
+
 class Game:
     def __init__(self):
         self.snake = Snake()
@@ -187,6 +187,8 @@ class Game:
     def consumption(self):
         if self.fruit.position == self.snake.body[0]:
             self.fruit.random_placement()
+            while (self.fruit.position in self.snake.body):
+                self.fruit.random_placement()
             self.snake.fruit_consumed()
             self.score += 1
             pygame.mixer.find_channel(True).play(SOUND_EFFECT if self.score%10 != 0 else SOUND_EFFECT_BONUS) 
