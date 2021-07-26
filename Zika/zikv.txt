@@ -1,0 +1,647 @@
+host,country,isolation,collection_date
+Homo sapiens,Honduras,amniotic fluid,2016/05/26
+Homo sapiens,Japan,,2016
+,,,
+Mus musculus,,,
+Homo sapiens,Brazil,,2017/06/29
+Homo sapiens,Japan,,2017
+Simiiformes,,,
+Simiiformes,Uganda,,1947
+Homo sapiens,Japan,blood,2016/04/21
+Homo sapiens,Japan,urine,2016/11/22
+Homo sapiens,Japan,,2016/05/20
+Homo sapiens,Honduras,,2016/01/06
+Homo sapiens,Brazil,blood,2015/03/01
+Tissue culture cells,Brazil,brain,2015/03
+Homo sapiens,Brazil,blood,2015/06/01
+Homo sapiens,Guinea,,2018/08
+Homo sapiens,Brazil,,2016/02/01
+Homo sapiens,French Guiana,urine,2015/12
+Homo sapiens,India,blood,2018/09/18
+Homo sapiens,French Polynesia,blood,2014/01
+Homo sapiens,French Polynesia,blood,2013/11
+Homo sapiens,French Polynesia,blood,2014/01
+Homo sapiens,French Polynesia,blood,2014/01
+Homo sapiens,French Polynesia,blood,2013/12
+Homo sapiens,French Polynesia,blood,2013/12
+Homo sapiens,French Polynesia,blood,2014/01
+Homo sapiens,French Polynesia,blood,2013/12
+Homo sapiens,French Polynesia,blood,2013/12
+Homo sapiens,Honduras,,2016/04/16
+Homo sapiens,China,blood,2019/07/01
+Homo sapiens,India,blood,2018/10/10
+Homo sapiens,India,blood,2018/10/15
+Aedes aegypti,Mexico,pooled insects,2016
+Mus musculus,,brain,
+Mus musculus,Colombia,,2016/01/17
+Homo sapiens,Brazil,,2015/12/01
+Homo sapiens,Canada,,2016
+Homo sapiens,Canada,,2016
+Homo sapiens,Canada,,2016
+Homo sapiens,Canada,,2016
+Homo sapiens,South Korea,urine,2016/04
+Homo sapiens,Brazil,blood,2015/12/08
+Homo sapiens,Brazil,blood,2016/01/08
+Homo sapiens,Brazil,blood,2016/01/30
+Aedes africanus,Central African Republic,,1976
+Aedes opok,Central African Republic,,1980
+Aedes africanus,Central African Republic,,1976/07/01
+Aedes aegypti,Colombia,,2016/01/29
+Aedes africanus,Senegal,,1984
+Homo sapiens,Thailand,,2016/11/30
+Homo sapiens,Thailand,placenta,2016/11/30
+Homo sapiens,Thailand,brain,2017/10/01
+Homo sapiens,Brazil,blood,2016/01/08
+Homo sapiens,Brazil,blood,2015/12/09
+Homo sapiens,Brazil,blood,2015/12/11
+Homo sapiens,Brazil,blood,2015/12/11
+Homo sapiens,Brazil,,2016/01/11
+Homo sapiens,Brazil,,2016/02/29
+Homo sapiens,Brazil,,2016/04/05
+Homo sapiens,Brazil,,2015/07/01
+Homo sapiens,Brazil,,2015
+Homo sapiens,Brazil,,2015
+Homo sapiens,Brazil,amniotic fluid,2015/11/30
+Homo sapiens,Italy,,2016/03/06
+Tissue culture cells,Brazil,,2016/06/14
+Homo sapiens,Colombia,blood,2016/07/27
+Aedes aegypti,Colombia,,2015/12/10
+Homo sapiens,Puerto Rico,blood,2016/08
+Homo sapiens,Puerto Rico,blood,2016/08
+Homo sapiens,Puerto Rico,blood,2016/08
+Homo sapiens,Puerto Rico,blood,2016/08
+Homo sapiens,Puerto Rico,blood,2016/05
+Homo sapiens,Puerto Rico,blood,2016/05
+Homo sapiens,Puerto Rico,blood,2016/05
+Homo sapiens,Puerto Rico,blood,2016/06
+Homo sapiens,Puerto Rico,blood,2016/06
+Homo sapiens,Puerto Rico,blood,2016/06
+Homo sapiens,Thailand,blood,2006/10/28
+Homo sapiens,Thailand,blood,2016/12/01
+Homo sapiens,Italy,urine,2016/02/01
+Homo sapiens,Italy,,2016/02/01
+Homo sapiens,Russia,blood,2016/08/25
+Homo sapiens,Russia,urine,2016/05/31
+Homo sapiens,Russia,urine,2016/08/25
+Homo sapiens,USA,brain,2016/02/02
+Homo sapiens,Colombia,blood,2015/12
+Homo sapiens,Colombia,blood,2015/12
+Homo sapiens,USA,blood,2016/08/09
+Homo sapiens,USA,urine,2016/09/03
+Homo sapiens,USA,urine,2016/08/18
+Simiiformes,Cambodia,"kidney,abdominal cavity",2016/06/14
+Homo sapiens,Cambodia,"kidney,abdominal cavity",2010
+Homo sapiens,China,,2016/02
+Homo sapiens,China,"saliva,oronasopharynx",2016/02/12
+Homo sapiens,China,blood,2016/02/26
+Homo sapiens,China,urine,2016/02/14
+Homo sapiens,Honduras,blood,2016/05
+Homo sapiens,Brazil,blood,2015/08
+Homo sapiens,Haiti,blood,2016/05/31
+Homo sapiens,Haiti,blood,2014/05/29
+Homo sapiens,Haiti,blood,2014/06/05
+Homo sapiens,Haiti,blood,2014/06/10
+Homo sapiens,Haiti,blood,2016/06/01
+Homo sapiens,Haiti,blood,2016/05/31
+Homo sapiens,USA,"saliva,oronasopharynx",2016/02/05
+Homo sapiens,Haiti,blood,2014/12/11
+Homo sapiens,Italy,urine,2016/02/01
+Homo sapiens,China,sperm,2016/09/14
+Homo sapiens,Nigeria,blood,1968
+Homo sapiens,Indonesia,blood,2014/12/30
+Anopheles sinensis,China,,2018/07
+Aedes aegypti,USA,,2016/09/01
+Homo sapiens,Mexico,cerebrospinal fluid,2016/02/25
+Homo sapiens,Mexico,"saliva,oronasopharynx",2016/02/25
+Homo sapiens,Mexico,blood,2015/10/15
+Homo sapiens,Mexico,blood,2015/10/15
+Aedes aegypti,Mexico,,2015/11
+Simiiformes,Uganda,,1947
+Homo sapiens,Russia,urine,2017/01/30
+Homo sapiens,Nicaragua,,2016/01/19
+Homo sapiens,Nicaragua,,2016/01/13
+Aedes aegypti,Malaysia,"kidney,abdominal cavity",1966
+Homo sapiens,Brazil,,2015/05/13
+Tissue culture cells,United Kingdom,sperm,2016/04/21
+Homo sapiens,Puerto Rico,,2015/12/01
+Homo sapiens,Brazil,blood,2015
+Homo sapiens,French Polynesia,,2013/10/25
+Homo sapiens,Puerto Rico,blood,2016/08
+Homo sapiens,USA,blood,2016/09
+Homo sapiens,Dominican Republic,,2016/06/06
+Homo sapiens,Mexico,,2016/06/23
+Homo sapiens,Brazil,mammalian milk,2016/02/12
+Homo sapiens,Brazil,"saliva,oronasopharynx",2016/01/29
+Homo sapiens,Brazil,urine,2016/01/14
+Homo sapiens,Singapore,blood,2017/08
+Homo sapiens,Thailand,urine,2016/08/30
+Homo sapiens,Thailand,brain,2017/08/07
+Homo sapiens,Thailand,urine,2016/11/11
+Homo sapiens,Thailand,urine,2017/09/07
+Homo sapiens,Thailand,,2013/07/09
+Homo sapiens,Thailand,,2013/09/21
+Homo sapiens,Brazil,blood,2015/07/01
+Homo sapiens,Thailand,,2015/01/16
+Tissue culture cells,,,
+Culex quinquefasciatus,,,
+Homo sapiens,China,blood,2016/11/01
+Homo sapiens,China,blood,2016
+,China,,2016
+Homo sapiens,Australia,blood,2016/02
+Homo sapiens,Taiwan,blood,2016/05
+Homo sapiens,Taiwan,,2016/10
+,Uganda,,1947
+Homo sapiens,China,blood,2016/02/06
+Homo sapiens,China,,2019/07/02
+Homo sapiens,Suriname,blood,2015/10/02
+Homo sapiens,China,blood,2016/02/16
+Homo sapiens,China,blood,2016/02/26
+Homo sapiens,China,urine,2016/02/29
+Homo sapiens,Brazil,,2016/03/01
+Homo sapiens,Nicaragua,,2016/01/19
+Homo sapiens,Singapore,,2016/09/04
+Homo sapiens,Singapore,,2016/09/04
+Homo sapiens,Singapore,,2016/09/06
+Homo sapiens,Singapore,,2016/09/06
+Homo sapiens,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/09/08
+Homo sapiens,Singapore,,2016/09/08
+Homo sapiens,Singapore,,2016/09/08
+Homo sapiens,Singapore,,2016/09/12
+Homo sapiens,Singapore,,2016/09/12
+Homo sapiens,Singapore,,2016/09/13
+Homo sapiens,Singapore,,2016/09/13
+Homo sapiens,Singapore,,2016/09/13
+Homo sapiens,Singapore,,2016/09/13
+Homo sapiens,Singapore,,2016/09/13
+Homo sapiens,Singapore,,2016/09/14
+Homo sapiens,Singapore,,2016/09/19
+Homo sapiens,Singapore,,2016/09/20
+Homo sapiens,Singapore,,2016/08/30
+Homo sapiens,Singapore,,2016/08/27
+Homo sapiens,Singapore,,2016/08/26
+Homo sapiens,Singapore,,2016/08/27
+Homo sapiens,Singapore,,2016/08/27
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/27
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/30
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/26
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/27
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/30
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/29
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/26
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/08/28
+Homo sapiens,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/09/05
+Homo sapiens,Singapore,,2016/08/30
+Homo sapiens,Singapore,,2016/09/02
+Homo sapiens,Singapore,,2016/08/30
+Homo sapiens,Singapore,,2016/09/15
+Homo sapiens,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/09/07
+Aedes aegypti,Singapore,,2016/09/05
+Aedes aegypti,Singapore,,2016/09/05
+Aedes aegypti,Singapore,,2016/09/06
+Aedes aegypti,Singapore,,2016/09/06
+Aedes aegypti,Singapore,,2016/09/06
+Aedes aegypti,Singapore,,2016/09/06
+Aedes aegypti,Singapore,,2016/09/06
+Aedes aegypti,Singapore,,2016/09/07
+Aedes aegypti,Singapore,,2016/09/07
+Aedes albopictus,Singapore,,2016/09/05
+Aedes aegypti,Singapore,,2016/09/07
+Homo sapiens,Singapore,,2016/05/13
+Aedes aegypti,USA,pooled insects,2016/08/22
+Aedes aegypti,USA,pooled insects,2016/08/23
+Aedes aegypti,USA,pooled insects,2016/08/23
+Aedes aegypti,USA,pooled insects,2016/09/04
+Aedes aegypti,USA,pooled insects,2016/09/09
+Aedes aegypti,USA,pooled insects,2016/09/20
+Aedes aegypti,USA,pooled insects,2016/10/05
+Homo sapiens,Colombia,blood,2015/10/07
+Homo sapiens,Brazil,blood,2015
+Homo sapiens,Guatemala,,2016/07/21
+Homo sapiens,Honduras,,2016/02/03
+Homo sapiens,Honduras,,2016/03/29
+Homo sapiens,Honduras,,2016/05/10
+Homo sapiens,Honduras,,2016
+Homo sapiens,Mexico,,2016/07/06
+Homo sapiens,Mexico,,2016/05/09
+Homo sapiens,Mexico,,2016/05/17
+Homo sapiens,Mexico,,2016/05/20
+Homo sapiens,Mexico,,2016/05/26
+Homo sapiens,Mexico,,2016/05/25
+Homo sapiens,Mexico,,2016/07/07
+Homo sapiens,Mexico,,2016/07/05
+Homo sapiens,Mexico,,2016/07/05
+Homo sapiens,Mexico,,2016/07/07
+Homo sapiens,Mexico,,2016/07/07
+Homo sapiens,Mexico,,2016/07/05
+Homo sapiens,Mexico,,2016/07/01
+Homo sapiens,Mexico,,2016/06/30
+Homo sapiens,Nigeria,"kidney,abdominal cavity",1968/09/09
+Homo sapiens,Nicaragua,,2016/08/05
+Homo sapiens,Nicaragua,,2016/08/19
+Homo sapiens,Nicaragua,,2016/07/25
+Homo sapiens,Nicaragua,,2016/07/19
+Homo sapiens,Nicaragua,,2016/08/29
+Homo sapiens,Panama,,2015/12/11
+Homo sapiens,Panama,brain,2015/12/11
+Homo sapiens,Panama,brain,2015/12/11
+Homo sapiens,Brazil,,2016/07/10
+Homo sapiens,Brazil,,2016/04/18
+Homo sapiens,Brazil,,2016/03/10
+Homo sapiens,Brazil,,2016/04/24
+Homo sapiens,Brazil,,2016/04/24
+Homo sapiens,Brazil,,2016/04/18
+Homo sapiens,Brazil,,2016/02/16
+Homo sapiens,Cape Verde,blood,2015/12/03
+Homo sapiens,Cape Verde,blood,2015/11/27
+Homo sapiens,Cape Verde,urine,2016/06/04
+Homo sapiens,Colombia,blood,2016/01/16
+Homo sapiens,Colombia,blood,2016/01/07
+Homo sapiens,Colombia,blood,2016/01/10
+Homo sapiens,Colombia,blood,2016/01/06
+Homo sapiens,Colombia,blood,2016/01/09
+Homo sapiens,Cuba,urine,2017/09/24
+Homo sapiens,Cuba,blood,2017/07/17
+Homo sapiens,Cuba,blood,2017/08/13
+Homo sapiens,USA,"saliva,oronasopharynx",2017/04/19
+Homo sapiens,Mexico,brain,2016/11/24
+Homo sapiens,USA,"saliva,oronasopharynx",2016/08/24
+Homo sapiens,USA,"saliva,oronasopharynx",2016/03/22
+Homo sapiens,USA,urine,2016/06/21
+Homo sapiens,USA,urine,2016/06/22
+Homo sapiens,USA,urine,2016/07/03
+Homo sapiens,USA,urine,2016/07/19
+Homo sapiens,USA,urine,2016/07/16
+Homo sapiens,USA,urine,2016/08/02
+Homo sapiens,USA,urine,2016/08/05
+Homo sapiens,USA,blood,2016/08/04
+Homo sapiens,USA,urine,2016/08/05
+Homo sapiens,USA,urine,2016/08/17
+Macaca mulatta,Uganda,"kidney,abdominal cavity",1947/04/20
+Homo sapiens,Suriname,,2016/02/11
+Homo sapiens,China,blood,2016/02/14
+Homo sapiens,China,,2016/02/16
+Homo sapiens,China,,2016/02
+Homo sapiens,China,,2016/02
+Homo sapiens,China,,2016/02/17
+Homo sapiens,China,,2016/02/17
+Homo sapiens,China,,2016/11/03
+Homo sapiens,Singapore,urine,2016/08/27
+Homo sapiens,Singapore,urine,2016/08/28
+Homo sapiens,Singapore,blood,2016/09/01
+Homo sapiens,China,,2016/02/16
+Homo sapiens,China,,2016/04/16
+Homo sapiens,China,,2016/04/16
+Homo sapiens,Brazil,sperm,
+Homo sapiens,China,,2016/02/17
+Aedes aegypti,USA,pooled insects,2016/08/22
+Aedes aegypti,USA,pooled insects,2016/08/23
+Aedes aegypti,USA,pooled insects,2016/08/23
+Aedes aegypti,USA,pooled insects,2016/09/04
+Aedes aegypti,USA,pooled insects,2016/09/09
+Aedes aegypti,USA,pooled insects,2016/09/20
+Aedes aegypti,USA,pooled insects,2016/10/05
+Aedes africanus,Senegal,"kidney,abdominal cavity",1984/11/20
+Aedes africanus,Senegal,,1984
+Aedes taylori,Senegal,"kidney,abdominal cavity",1984/12/06
+Aedes taylori,Senegal,"kidney,abdominal cavity",1984/12/14
+Aedes taylori,Senegal,,1984/06/12
+Homo sapiens,China,,2016/02/17
+Homo sapiens,China,blood,2016/02/25
+Homo sapiens,Cambodia,"kidney,abdominal cavity",2010
+Homo sapiens,Philippines,,2012/05/09
+Homo sapiens,Panama,blood,2015
+Homo sapiens,Panama,blood,2015
+Homo sapiens,Panama,blood,2015
+Homo sapiens,Puerto Rico,blood,2015
+Homo sapiens,Thailand,,2014/07/19
+Homo sapiens,Brazil,blood,2016/04/05
+Homo sapiens,Brazil,blood,2016/04/08
+Homo sapiens,Brazil,blood,2016/04/12
+Homo sapiens,Brazil,urine,2016/04/12
+Homo sapiens,Brazil,urine,2016/04/13
+Homo sapiens,Brazil,blood,2016/04/14
+Homo sapiens,Brazil,blood,2016/04/15
+Homo sapiens,Brazil,urine,2016/04/18
+Homo sapiens,Brazil,urine,2016/03/21
+Homo sapiens,Brazil,urine,2016/03/23
+Homo sapiens,Brazil,blood,2016/03/28
+Homo sapiens,Brazil,blood,2016/03/30
+Homo sapiens,Brazil,urine,2016/03/30
+Homo sapiens,Brazil,urine,2016/04/06
+Homo sapiens,Brazil,urine,2016/04/04
+Homo sapiens,Brazil,sperm,2016/04/26
+Homo sapiens,Brazil,urine,2016/04/26
+Homo sapiens,Brazil,sperm,2016/05/10
+Homo sapiens,Brazil,sperm,2016/05/17
+Homo sapiens,Brazil,sperm,2016/05/24
+Homo sapiens,Brazil,sperm,2016/06/03
+Homo sapiens,Brazil,sperm,2016/06/08
+Homo sapiens,Brazil,sperm,2016/06/16
+Homo sapiens,Brazil,sperm,2016/06/28
+Homo sapiens,Brazil,sperm,2016/07/05
+Homo sapiens,Brazil,sperm,2016/07/12
+Homo sapiens,Brazil,sperm,2016/07/19
+Homo sapiens,Brazil,sperm,2016/07/27
+Homo sapiens,Brazil,sperm,2016/04/19
+Homo sapiens,Brazil,urine,2016/04/19
+Homo sapiens,Brazil,urine,2016/05/05
+Homo sapiens,Brazil,sperm,2016/05/12
+Homo sapiens,Brazil,sperm,2016/05/19
+Homo sapiens,Brazil,sperm,2016/06/02
+Homo sapiens,Brazil,sperm,2016/06/09
+Homo sapiens,Colombia,blood,2016/04/28
+Homo sapiens,Colombia,blood,2016/04/05
+Homo sapiens,Dominican Republic,blood,2016/04/05
+Homo sapiens,Dominican Republic,urine,2016/04/05
+Homo sapiens,Dominican Republic,urine,2016/04/07
+Homo sapiens,Dominican Republic,blood,2016/04/07
+Homo sapiens,Dominican Republic,blood,2016/04/11
+Homo sapiens,Dominican Republic,urine,2016/04/11
+Homo sapiens,Dominican Republic,blood,2016/04/11
+Homo sapiens,Dominican Republic,blood,2016/04/18
+Homo sapiens,Dominican Republic,urine,2016/04/18
+Homo sapiens,Dominican Republic,blood,2016/04/18
+Homo sapiens,Dominican Republic,blood,2016/04/20
+Homo sapiens,Dominican Republic,blood,2016/04/21
+Homo sapiens,Dominican Republic,blood,2016/04/27
+Homo sapiens,Dominican Republic,blood,2016/06/13
+Homo sapiens,Dominican Republic,blood,2016/06/14
+Homo sapiens,Dominican Republic,blood,2016/05/10
+Homo sapiens,Dominican Republic,blood,2016/06/06
+Homo sapiens,Dominican Republic,blood,2016/07/07
+Homo sapiens,Honduras,blood,2016/05/28
+Homo sapiens,Honduras,blood,2016/06/04
+Homo sapiens,Honduras,blood,2016/06/06
+Homo sapiens,Honduras,blood,2016/06/07
+Homo sapiens,Honduras,blood,2016/06/10
+Homo sapiens,Honduras,blood,2016/06/10
+Homo sapiens,Honduras,blood,2016/04/30
+Homo sapiens,Honduras,blood,2016/05/09
+Homo sapiens,Honduras,blood,2016/05/13
+Homo sapiens,Honduras,blood,2016/05/13
+Homo sapiens,Jamaica,blood,2016/07/10
+Homo sapiens,Jamaica,blood,2016/06/13
+Homo sapiens,Puerto Rico,blood,2016/04/13
+Homo sapiens,Puerto Rico,blood,2016/06/26
+Homo sapiens,USA,urine,2016/06/22
+Homo sapiens,USA,urine,2016/07/19
+Homo sapiens,USA,urine,2016/08/02
+Homo sapiens,USA,urine,2016/08/05
+Homo sapiens,USA,urine,2016/08/17
+Homo sapiens,USA,blood,2016/09/19
+Homo sapiens,USA,blood,2016/09/28
+Homo sapiens,USA,urine,2016/07/29
+Homo sapiens,USA,urine,2016/08/04
+Homo sapiens,USA,urine,2016/08/04
+Homo sapiens,USA,urine,2016/08/23
+Homo sapiens,USA,urine,2016/08/31
+Homo sapiens,USA,urine,2016/10/11
+Homo sapiens,USA,urine,2016/10/03
+Homo sapiens,USA,blood,2016/09/28
+Homo sapiens,USA,blood,2016/08/15
+Homo sapiens,Colombia,"saliva,oronasopharynx",2016/02/09
+Macaca mulatta,Uganda,"kidney,abdominal cavity",1947/04
+Homo sapiens,China,blood,2016
+Homo sapiens,Mexico,,2016/08/05
+Homo sapiens,Mexico,,2016/06/30
+Aedes aegypti,Haiti,,2016/05/17
+Homo sapiens,Micronesia,blood,2007/06/01
+Homo sapiens,Guatemala,,2015/12/01
+Homo sapiens,Brazil,,2015
+Homo sapiens,Guatemala,,2015/11/01
+Aedes africanus,Central African Republic,,1968
+Aedes luteocephalus,Senegal,,1997
+Aedes dalzieli,Senegal,,2001
+Aedes dalzieli,Senegal,,2001
+Aedes luteocephalus,Senegal,,1968
+Homo sapiens,Brazil,,2015
+Homo sapiens,Brazil,,2015
+Homo sapiens,Brazil,,2015
+Homo sapiens,Brazil,,2015
+Homo sapiens,Honduras,,2016/08/26
+Homo sapiens,Honduras,,2016/08/26
+Homo sapiens,Peru,,2016/06/28
+Homo sapiens,Peru,,2016/07/11
+Homo sapiens,Venezuela,,2016/10/19
+Aedes aegypti,French Guiana,,2016
+Aedes aegypti,French Guiana,,2016
+Armigeres subalbatus,China,,2016/12/01
+Aedes aegypti,Guadeloupe,,2016
+Aedes aegypti,Guadeloupe,,2016
+Aedes aegypti,Guadeloupe,,2016
+Aedes aegypti,Guadeloupe,,2016
+Aedes aegypti,Guadeloupe,,2016
+Aedes aegypti,Guadeloupe,,2016
+Aedes aegypti,Guadeloupe,,2016
+Homo sapiens,French Polynesia,,2013/11/28
+Homo sapiens,Haiti,blood,2014/12/12
+Homo sapiens,Mexico,blood,2016/03/03
+Homo sapiens,Mexico,"kidney,abdominal cavity",2016/03/03
+Aedes africanus,Uganda,,1962/11
+Simiiformes,Uganda,,1947
+Tissue culture cells,Uganda,,1947
+Simiiformes,Uganda,,1947
+Tissue culture cells,Uganda,,1947
+Macaca mulatta,Uganda,,1947/04
+Simiiformes,Uganda,,2016/06/14
+Homo sapiens,Martinique,,2015/12
+Homo sapiens,Brazil,brain,2015
+Aedes aegypti,Malaysia,,1966/07
+Homo sapiens,French Polynesia,blood,2013/10/25
+Homo sapiens,French Polynesia,blood,2013/10/25
+Homo sapiens,Puerto Rico,,2015/12
+Homo sapiens,Puerto Rico,,2015/12/01
+Homo sapiens,Suriname,blood,2016/01/22
+Homo sapiens,Italy,sperm,2016/04
+Aedes aegypti,Mexico,"kidney,abdominal cavity",2016
+Aedes sp.,Malaysia,"kidney,abdominal cavity",1966/07/14
+Aedes africanus,Senegal,"kidney,abdominal cavity",1984/11/17
+Aedes africanus,Senegal,"kidney,abdominal cavity",1984/11/17
+Aedes africanus,Senegal,,1984/11/17
+Aedes sp.,Mexico,,2016/01/01
+Aedes sp.,Malaysia,,1966/07/14
+Aedes sp.,Mexico,"kidney,abdominal cavity",2016/01/01
+Aedes sp.,Mexico,"kidney,abdominal cavity",2016/01/01
+Homo sapiens,Ecuador,blood,2016/04
+Homo sapiens,Ecuador,blood,2016/04
+Homo sapiens,Ecuador,,2016/05/01
+Homo sapiens,Puerto Rico,,2015/12/01
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2015/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Colombia,,2016/12
+Homo sapiens,Honduras,placenta,2015/01/06
+Homo sapiens,Mexico,,2016/06/23
+Homo sapiens,Mexico,,2016/08/10
+Homo sapiens,Mexico,,2016/08/22
+Homo sapiens,Mexico,"kidney,abdominal cavity",2016/06/23
+Homo sapiens,Nicaragua,,2016/07/10
+Homo sapiens,Nicaragua,,2016/07/10
+Homo sapiens,Nicaragua,,2016/04/22
+Homo sapiens,Nicaragua,,2016/06/30
+Homo sapiens,Nicaragua,,2016/06/30
+Homo sapiens,Nicaragua,,2016/05/29
+Homo sapiens,Nicaragua,,2016/06/29
+Homo sapiens,Nicaragua,,2016/06/29
+Homo sapiens,Nicaragua,,2016/07/07
+Homo sapiens,Panama,"kidney,abdominal cavity",2016
+Homo sapiens,Panama,"kidney,abdominal cavity",2015/12/11
+Homo sapiens,Panama,"kidney,abdominal cavity",2015/12/18
+Homo sapiens,Panama,"kidney,abdominal cavity",2015/12/18
+Homo sapiens,Puerto Rico,"kidney,abdominal cavity",2015/12
+Macaca mulatta,,,2015/07/07
+Macaca mulatta,,,2015/07/07
+Macaca mulatta,,,2015/07/07
+Homo sapiens,Thailand,"kidney,abdominal cavity",2013/02/12
+Homo sapiens,USA,blood,2016/01/01
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,,,1947
+Macaca mulatta,Uganda,,1947/04/20
+Homo sapiens,Italy,,2016/04
+Homo sapiens,China,,2016/09
+Homo sapiens,Cuba,brain,2017/02/12
+Homo sapiens,Venezuela,mammalian milk,2016/03/25
+Homo sapiens,Venezuela,blood,2016/03/25
+Aedes aegypti,Haiti,,2016/06/27
+Culicidae,Haiti,,2016/05/10
+Homo sapiens,South Korea,sperm,2016/04/28
+Homo sapiens,South Korea,sperm,2016/03/22
+Homo sapiens,Brazil,,2015/03

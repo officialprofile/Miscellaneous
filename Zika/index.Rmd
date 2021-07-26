@@ -1,0 +1,89 @@
+---
+title: "Zika Visualization Tool"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: yeti
+    orientation: columns
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(leaflet)
+library(RColorBrewer)
+library(plotly)
+library(dplyr)
+library(highcharter)
+library(DT)
+library(magrittr)
+library(networkD3)
+```
+
+```{r include=FALSE}
+ds                  <- read.csv('zikv.txt', sep=',')
+colnames(ds)        <- c('Host', 'Country', 'Isolation', 'Collection date')
+ds$Host             <- factor(ds$Host)
+ds$Country          <- factor(ds$Country)
+ds$Isolation        <- factor(ds$Isolation)
+ds$`Collection date`  <- ds[,'Collection date'] %>% substr(., 1, 4) %>% as.numeric()
+
+
+count_cases         <- table(ds$Country) %>% as.data.frame()
+colnames(count_cases) <- c('Country', 'Number of cases')
+codes               <- read.csv('countries_codes.csv')
+merge(count_cases, codes, by = "Country", all.x = TRUE)
+
+count_hosts         <- table(ds$Host) %>% as.data.frame()
+colnames(count_hosts) <- c('Host', 'Cases')
+count_hosts <- count_hosts[count_hosts$Cases>6,]
+```
+
+
+Main {data-icon="fa-signal"}
+=====================================
+
+Column {data-width=600, .tabset}
+-----------------------------------------------------------------------
+### Total cases
+
+```{r}
+hcmap(
+  "custom/world-robinson-lowres", 
+  data = count_cases,
+  value = "Number of cases",
+  borderWidth = 0,
+  nullColor = "#d3d3d3",
+  ) %>%
+  hc_colorAxis(
+    stops = color_stops(colors = viridisLite::inferno(10, begin = 0.1)),
+    type = "logarithmic"
+    )  %>% hc_size(., width = 600)
+```
+
+
+### Some network
+
+Under construction
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Raw data preview
+
+```{r}
+datatable(select(ds, Host, Country, `Collection date`) %>% na.omit())
+```
+
+
+
+
+### Most prevalent hosts
+
+```{r}
+hchart(count_hosts, "column", hcaes(x=Host, y=Cases),
+       color = "#d3d3d3")
+```
+
+Reference strain {data-icon="fa-table"}
+=====================================
+
+Under construction
